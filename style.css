@@ -1,0 +1,358 @@
+body{
+	font-family: sans-serif;
+	background: #DDEFEF;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	text-align: center;
+	color: #333;
+	margin: 20px 0;
+}
+
+h3{
+	text-align: center;
+	/*ketebalan font*/
+	font-weight: 100;
+	color: #333;
+}
+ 
+.tulisan_login{
+	text-align: center;
+	/*membuat semua huruf menjadi kapital*/
+	text-transform: uppercase;
+	color: #333;
+}
+ 
+.kotak_login{
+	width: 350px;
+	/*meletakkan form ke tengah*/
+	margin: 30px auto;
+	text-align: center;
+}
+
+.kotak_login2{
+	width: 350px;
+	background: white;
+	/*meletakkan form ke tengah*/
+	margin: 20px auto;
+	padding: 30px 20px;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#background_border {
+	width: 100%;
+	max-width: 800px;
+	margin: 20px auto;
+	padding: 15px;
+	background: white;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+#background_border input[type="text"] {
+	flex: 1;
+	min-width: 200px;
+	padding: 8px;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	font-size: 11pt;
+}
+
+#background_border input[type="submit"] {
+	padding: 8px 20px;
+	background: #47C0DB;
+	color: white;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	font-size: 11pt;
+}
+
+#background_border input[type="submit"]:hover {
+	background: #37A0BB;
+}
+
+#background_border a {
+	padding: 8px 15px;
+	background: #f0f0f0;
+	color: #333;
+	text-decoration: none;
+	border-radius: 3px;
+	border: 1px solid #ddd;
+	font-size: 11pt;
+}
+
+#background_border a:hover {
+	background: #e0e0e0;
+}
+
+table {
+	width: 100%;
+	max-width: 1000px;
+	margin: 20px auto;
+	border-collapse: collapse;
+	background: white;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+table thead {
+	background: #47C0DB;
+	color: white;
+}
+
+table th {
+	padding: 12px;
+	text-align: left;
+	border: 1px solid #ddd;
+	font-weight: bold;
+}
+
+table td {
+	padding: 10px;
+	border: 1px solid #ddd;
+}
+
+table tbody tr:nth-child(even) {
+	background: #f9f9f9;
+}
+
+table tbody tr:hover {
+	background: #f0f0f0;
+}
+
+table a {
+	color: #47C0DB;
+	text-decoration: none;
+	padding: 5px 10px;
+	border: 1px solid #47C0DB;
+	border-radius: 3px;
+	font-size: 10pt;
+	display: inline-block;
+}
+
+table a:hover {
+	background: #47C0DB;
+	color: white;
+}
+
+a {
+	color: #47C0DB;
+	text-decoration: none;
+	margin: 0 10px;
+	display: inline-block;
+	padding: 10px 15px;
+	background: #f0f0f0;
+	border-radius: 3px;
+	border: 1px solid #ddd;
+	font-size: 11pt;
+}
+
+a:hover {
+	background: #47C0DB;
+	color: white;
+	border-color: #47C0DB;
+}
+
+label{
+	font-size: 11pt;
+	display: block;
+	margin-top: 15px;
+	color: #333;
+}
+ 
+.form_login{
+	/*membuat lebar form penuh*/
+	box-sizing : border-box;
+	width: 100%;
+	padding: 10px;
+	font-size: 11pt;
+	margin-bottom: 10px;
+	margin-top: 5px;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+}
+
+.form_login:focus {
+	outline: none;
+	border-color: #47C0DB;
+	box-shadow: 0 0 5px rgba(71, 192, 219, 0.3);
+}
+ 
+.tombol_login{
+	background: #47C0DB;
+	color: white;
+	font-size: 11pt;
+	width: auto;
+	padding: 10px 30px;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	margin-right: 10px;
+	margin-top: 15px;
+	display: inline-block;
+	transition: background 0.3s ease;
+}
+
+.tombol_login:hover {
+	background: #37A0BB;
+}
+
+.tombol_reset{
+	background: #999;
+	color: white;
+	font-size: 11pt;
+	width: auto;
+	padding: 10px 30px;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	margin-top: 15px;
+	display: inline-block;
+	transition: background 0.3s ease;
+}
+
+.tombol_reset:hover {
+	background: #777;
+}
+ 
+.link{
+	color: #232323;
+	text-decoration: none;
+	font-size: 10pt;
+}
+
+/* Form print satuan */
+#print_satuan {
+	width: 100%;
+	max-width: 800px;
+	margin: 30px auto;
+	padding: 15px;
+	background: white;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+#print_satuan input[type="text"] {
+	flex: 1;
+	min-width: 200px;
+	padding: 8px;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	font-size: 11pt;
+}
+
+#print_satuan input[type="submit"] {
+	padding: 8px 20px;
+	background: #47C0DB;
+	color: white;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	font-size: 11pt;
+}
+
+#print_satuan input[type="submit"]:hover {
+	background: #37A0BB;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+	.kotak_login {
+		width: 90%;
+		margin: 30px auto;
+	}
+
+	.kotak_login2 {
+		width: 90%;
+		margin: 20px auto;
+		padding: 20px 15px;
+	}
+
+	table {
+		width: 95%;
+		font-size: 10pt;
+	}
+
+	table th, table td {
+		padding: 8px 5px;
+	}
+
+	table a {
+		padding: 3px 5px;
+		font-size: 9pt;
+	}
+
+	a {
+		padding: 8px 10px;
+		font-size: 10pt;
+		margin: 5px 2px;
+		display: inline-block;
+	}
+
+	#background_border {
+		flex-direction: column;
+	}
+
+	#background_border input[type="text"] {
+		width: 100%;
+	}
+
+	#background_border a {
+		width: 100%;
+		text-align: center;
+	}
+
+	.tombol_login, .tombol_reset {
+		width: auto;
+		padding: 10px 20px;
+	}
+}
+
+/* Print styles */
+@media print {
+	body {
+		background: white;
+	}
+
+	a, button {
+		display: none;
+	}
+
+	table {
+		box-shadow: none;
+		border: 1px solid black;
+	}
+}
+
+.pagination {
+    background: #26c6da;   /* warna biru seperti contoh */
+    padding: 10px 20px;
+    text-align: center;
+    margin: 20px auto;
+    width: max-content;
+    border-radius: 4px;
+    display: flex;
+    gap: 25px;
+}
+
+.pagination a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.pagination a.active {
+    text-decoration: underline;
+}
